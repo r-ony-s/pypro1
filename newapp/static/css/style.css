@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+a{
+    text-decoration: none;
+    
+}
+li{
+    list-style: none;
+}
+
+body{
+    font-family: "Mukta", sans-serif;
+}
+header{
+    width:100%;
+}
+.container{
+    width:1140px;
+    margin:0 auto;
+}
+.topbar{
+    width:100%;
+    background-color:white;
+    padding:40px 0;
+}
+.topbar-content{
+    display:flex;
+    justify-content:space-between;
+}
+.logo a{
+    text-transform:uppercase;
+    font-size:20px;
+    font-weight:300;
+    color:#25262a;
+    letter-spacing:2px;
+    padding:4px 14px;
+    border:2px solid black;
+}
+.topbar-icon a{
+    color:#868995;
+    margin-left:8px;
+}
+.topbar-icon a:hover{
+    color:#25262a;
+}
+.topbar input{
+    font-size: 16px;
+    padding: 12px;
+    border: none
+}
+.topbar input:focus{
+    outline:none;
+    padding:0px;
+}
+.topbar form i{
+    color:#868995;
+}
+.main-menu li{
+    display:inline-block;
+    margin-right:30px;
+}
+.main-menu{
+    text-align:center;
+    padding:20px 0;
+}
+.main-menu li a{
+    font-size:16px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:300;
+}
+.banner{
+    width:100%;
+    /* Use the actual static URL for the existing image file */
+    background-image: url("/static/images/img1.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:scroll;
+    background-position:center;
+    padding:120px 0px;
+
+}
+
