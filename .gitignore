@@ -1,8 +1,8 @@
-# Python
+# --- Python ---
 *.py[cod]
 __pycache__/
 
-# Virtual environments
+# --- Virtual Environments (ignore all variations) ---
 env/
 venv/
 ENV/
@@ -10,31 +10,31 @@ ENV/
 env.bak/
 venv.bak/
 
-# Pyenv
+# --- Pyenv ---
 .python-version
 
-# Django
+# --- Django ---
 *.log
 local_settings.py
 db.sqlite3
 media/
 staticfiles/
 
-# Byte-compiled / optimized / DLL files
+# --- Byte-compiled / optimized / DLL files ---
 *.so
 
-# Distribution / packaging
+# --- Distribution / packaging ---
 *.egg
 *.egg-info/
 dist/
 build/
 .eggs/
 
-# Installer logs
+# --- Installer logs ---
 pip-wheel-metadata/
 pip-selfcheck.json
 
-# Coverage and test reports
+# --- Coverage and test reports ---
 .coverage
 htmlcov/
 .coverage.*
@@ -42,24 +42,24 @@ htmlcov/
 coverage.xml
 nosetests.xml
 
-# Mypy
+# --- Mypy ---
 .mypy_cache/
 
-# Environment files
+# --- Environment files ---
 .env
 *.env
 
-# Celery
+# --- Celery ---
 celerybeat-schedule
 
-# IDEs and editors
+# --- IDEs and editors ---
 .vscode/
 .idea/
 *.iml
 
-# OS files
+# --- OS files ---
 .DS_Store
 Thumbs.db
 
-# Other
+# --- Other ---
 local_settings.py
