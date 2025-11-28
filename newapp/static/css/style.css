@@ -177,3 +177,19 @@ header{
     transform: scale(1.1);
     transition: 0.5s;
 }
+.product{
+    width: 100%;
+    padding:100px 0px;
+}
+.product-title{
+    text-align: center;
+}
+.line{
+    width: 30px;
+    height: 2px;
+    margin: auto;
+    background-color: blue;
+}
+.owl-dots{
+    display: none;
+}

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoppers</title>
     <!-- cutom css -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
     <!-- cutom css -->
      <!-- font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,12 @@
     <!-- font family -->
      <!-- font awesome -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- owl carosoul css start -->
+       <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+       <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+      <!-- owl carosoul css start -->
+       <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
 </head>
 <body>
     <!-- header section code start -->
@@ -150,7 +156,77 @@
 
       </section>
      <!-- catagory section code end -->
-     
+
+     {% comment %} product section code start {% endcomment %}
+     <section class="product">
+        <div class="container">
+            <div class="product-title">
+                <div class="line"></div>
+                <h3>Feature Products</h3>
+            </div>
+     <div class="product-slider">
+
+       <div class="owl-carousel owl-theme">
+        <div class="item"><div class="p-item">
+                   <img  class="img-fluid" src="{% static 'images/new.png'%}" alt="images">
+                    <h3>Top Rank</h3>
+                    <p>Finding perfect t-shirt</p>
+                    <p>$50</p>
+                </div></div>
+    <div class="item"><div class="p-item">
+                    <img  class="img-fluid" src="{% static 'images/new.png'%}" alt="images">
+                    <h3>Top Rank</h3>
+                    <p>Finding perfect t-shirt</p>
+                    <p>$50</p>
+                </div></div>
+    <div class="item"><div class="p-item">
+                   <img  class="img-fluid" src="{% static 'images/new.png'%}" alt="images">
+                    <h3>Top Rank</h3>
+                    <p>Finding perfect t-shirt</p>
+                    <p>$50</p>
+                </div></div>
+    <div class="item"><div class="p-item">
+                    <img  class="img-fluid" src="{% static 'images/new.png'%}" alt="images">
+                    <h3>Top Rank</h3>
+                    <p>Finding perfect t-shirt</p>
+                    <p>$50</p>
+                </div></div>
+   </div>
+
+
+            
+            </div>
+        </div>
+
+     </section>
+ 
+    {% comment %} product section code end {% endcomment %}
+
+ <!-- jQuery -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.js' %}"></script>
+
+
+<!-- Owl Carousel -->
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.js' %}"></script>
+<script>
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{ items:1 },
+            600:{ items:2 },
+            1000:{ items:3 }
+        }
+    });
+});
+</script>
+
+
 
 </body>
 </html>
